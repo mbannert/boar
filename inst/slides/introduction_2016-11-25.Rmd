@@ -1,0 +1,163 @@
+---
+title: "Build Online Apps with R"
+subtitle: "Introductory Session"
+author: "Matthias Bannert"
+date: "25 Nov 2016"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## :~$ whoami
+
+**Matthias Bannert**
+
+- studied economics @UniKN
+- PhD @ETHZ: partly economics, mostly methodology and stats
+- currently: develops software for academic researchers @ETHZ
+- open source software projects: timeseriesdb, dropR, RAdwords
+
+## About this course
+
+[course material](https://github.com/mbannert/boar) 
+
+
+## Motivation
+
+## Before you start... 
+
+**... check the stack:**
+
+- R 3.3.1+
+- R Studio 1.0+
+- R packages: shiny, shinydashboard, knitr
+- git (optional)
+
+## Guess what...
+
+**... the following code does:**
+
+```{r,echo=T}
+a <- 1+1
+b <- 2+2
+d <- a + b
+e <- c(1,2,4)
+
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+a <- 1+1
+b <- 2+2
+d <- a + b
+e <- c(1,2,4)
+
+```
+
+```{r}
+a
+b
+d
+e
+```
+
+## Guess what...
+
+**... the following code does:**
+
+```{r,echo=T}
+m <- matrix(1:12,4,3)
+d <- data.frame(col1 = 1:8,
+                col2 = letters[1:8])
+l <- list()
+l$element_a <- a
+l$element_m <- m
+l$element_d <- d
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+m <- matrix(1:12,4,3)
+
+```
+
+```{r}
+m
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+d <- data.frame(col1 = 1:8,
+                col2 = letters[1:8])
+
+```
+
+```{r}
+d
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+l <- list()
+l$element_a <- a
+l$element_m <- m
+l$element_d <- d
+
+```
+
+```{r}
+l
+```
+
+## You know all of those, don't you?
+
+```{r,eval=F,echo=T}
+?sum()
+ls()
+c()
+matrix()
+data.frame()
+list()
+head()
+tail()
+str()
+function()
+lapply()
+```
+
+## Are you familiar with your R Studio IDE?
+
+- .Rproj
+- script window
+- console
+- file browser
+
+
+## Some introductory resources
+
+- [Official Introduction to R](https://cran.r-project.org/doc/manuals/R-intro.pdf) ( chapter 2)
+- [stackoverflow questions tagged r](http://stackoverflow.com/questions/tagged/r)
+
+- [YaRRR! The Pirate's Guide to R](http://nathanieldphillips.com/thepiratesguidetor/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,4 @@
 seminar slides: inst/slides
 example app: inst/app
 
-## Online Book
-available soon.
-
 
