@@ -276,9 +276,12 @@ server <- function(input, output) {
 - [ShowMeShiny](http://www.showmeshiny.com/)
 - [Shiny Google Group](https://groups.google.com/forum/#!forum/shiny-discuss)
 
+## Ideas for Apps ?
 
-
-
+- Want to do something interactive for teaching stats? 
+- Want to give an existing application a GUI? 
+- Have a personal project?
+- ... 
 
 
 
