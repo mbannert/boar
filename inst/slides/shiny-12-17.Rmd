@@ -66,10 +66,6 @@ shinyServer(function(input, output) {
 
 => shiny functions create these wraps for us.
 
-
-
-
-
 ## Analyzing the hello-world app: server.R 
 
 ```{r,eval=FALSE,echo=TRUE}
@@ -81,7 +77,6 @@ shinyServer(function(input, output) {
   })
 })
 ```
-
 
 
 ## Deployment
