@@ -1,0 +1,89 @@
+---
+title: "Build useful Online Apps with R"
+subtitle: "Warm up"
+author: "Matthias Bannert"
+date: "16 Dec 2016"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Warm up!
+
+<center>
+> hear - forget
+
+>  see - remember
+  
+>  do - understand
+</center>
+
+## Getting to know your workplace (R Studio IDE)
+
+- 4 panes
+- console 
+- script tabs (cmd+enter / ctrl+enter)
+- projects (.Rproj)
+- autocomplete (tab)
+
+## Suggested folder structure for course projects
+
+- data/ 
+- R/ (functions)
+- tests/ (function calls)
+- inst/app (shiny)
+
+## Repetitio est ... 
+
+- What does '<-' mean?
+- What's the difference between (),[] and {}?
+- make sure you got [these basic questions](https://rpubs.com/mbannert/233531) (slides 8 ff) right! 
+
+## Getting in touch with data
+
+Formats:
+
+- binary (.RData)
+- text formats (.csv, json)
+- spreadsheets (.xlsx)
+- other foreign formats (.dta, spss, ...)
+
+Sources:
+
+- built-in
+- local file system
+- APIs (quandl, twitter, ...)
+
+## Functions, functions, functions
+
+- base R functions (mean, sum, ...)
+- core extension functions (lm, t.test, stl)
+- functions from other (CRAN) packages (runApp, renderTable)
+- custom functions (anonymous and non-anymous)
+
+! Note some functions come in disguise, e.g., `+()`,
+``
+
+## Defining and calling functions
+
+- define a function using the `function(){}`
+- call with `functionName(param1,param2)`
+- apply functions to a list (lapply)
+
+! A word about scoping (searching for objects):
+R looks for variables on the inside of a function first, then starts to check the outside. 
+
+=> DO NOT create functions that rely on outside objects!
+
+## Graphics in R
+
+- base R (plot, hist, ...)
+- advanced static plots (ggplot, lattice, ...)
+- interactive plots (dygraphs, rCharts, ...) 
+
+
+
+

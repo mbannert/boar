@@ -5,7 +5,6 @@ author: "Matthias Bannert"
 date: "25 Nov 2016"
 output: ioslides_presentation
 widescreen: true
-runtime: shiny
 ---
 
 ```{r setup, include=FALSE}
@@ -24,47 +23,6 @@ knitr::opts_chunk$set(echo = FALSE)
 <div align="right">
 <img src="mba_profile.png" alt="matthias bannert" style="width: 180px;"/></div>
 
-## Background Poll
-
-```{r,echo=FALSE}
-library(grid)
-library(shiny)
-source("../../R/bullet.R")
-
-fluidPage(sidebarLayout(sidebarPanel(
-  numericInput("members", "Number of participants", 15),
-  numericInput("rstats", "R Statistical langauge", 15),  
-  numericInput("html", "HTML/CSS/JS devs", 15),
-  numericInput("shiny", "shiny framework", 15)
-  ),
-  mainPanel(
-    renderPlot({
-      techavg <- mean(c(input$rstats,
-                        input$html,
-                        input$shiny) / input$members)*100
-  df1 <- data.frame(units = c("R(%)","WebDev(%)","shiny(%)"),
-                    low = c(25,25,25),
-                    mean = c(50,50,50),
-                    high = c(100,100,100),
-                    target = c(techavg,techavg,techavg),
-                    value = c(100*(input$rstats/input$members),
-                              100*(input$html/input$members),
-                              100*(input$shiny/input$members)
-                              )
-                    )
-
-  g <- gridBulletGraphH(df1,bcol = c("#999999","#CCCCCC","#E1E1E1"),
-                   vcol = "#333333",font = 20)
-
-  g + title(paste("Usage of Technologies Among Participants", sep=" "))
-
-})  
-
-
-    )
-  ))
-
-```
 
 
 ## About this course

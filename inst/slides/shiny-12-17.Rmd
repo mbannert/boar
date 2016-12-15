@@ -1,0 +1,96 @@
+---
+title: "Build useful Online Apps with R"
+subtitle: "The Shiny Web Application Framework"
+author: "Matthias Bannert"
+date: "17 Dec 2016"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## LMGTFY: What is an app?
+
+<img src="whatsapp.png" alt="What is an app?">
+
+## Our approach to create an online app
+
+- use a framework (shiny)
+- use widgets (htmlwidgets)
+- seperation of concerns (ui, server, custom R functions)
+
+## What is a shiny app?
+
+3 files that live in the same folder
+
+<img src="johnnybravo.jpg" height="100">
+<img src="mule.jpg" height="100">
+<img src="tresor.png" height="100">
+
+1. ui.R (Web Graphical user interface, looks good.) 
+2. server.R (backend, does the work) 
+3. global.R (globally available objects) (optional)
+
+=> let's build our first app!
+
+## What does the shiny framework do for us?
+
+- create HTML/CSS/Javascript code
+- start/run a (local) webserver
+- communication between the R session and the browser
+
+## Analyzing the hello-world app: ui.R
+```{r,eval=FALSE,echo=TRUE}
+library(shiny)
+# Define server logic required to draw a histogram
+shinyServer(function(input, output) {
+    output$randomPlot <- renderPlot({
+    # some plotting
+  })
+})
+```
+
+## A minimal note on HTML
+
+- Markup language
+- content is wrapped in tags
+
+```
+<a href="http://somedestination.com">some link</a>
+<b>this is bold</b>
+<i>this is italic</i>
+<div class="some-class">a class with a style</div>
+```
+
+=> shiny functions create these wraps for us.
+
+
+
+
+
+## Analyzing the hello-world app: server.R 
+
+```{r,eval=FALSE,echo=TRUE}
+shinyServer(function(input, output) {
+    output$randomPlot <- renderPlot({
+    hist(rnorm(input$obs),
+         col = 'darkgray',
+         border = 'white')
+  })
+})
+```
+
+
+
+## Deployment
+
+- local
+- shiny server
+- [SaaS](https://shinyapps.io)
+
+## Are you ready for to build a real app?
+
+[Take the official quiz by rstudio.com!](https://shiny.rstudio.com/tutorial/quiz/)
+

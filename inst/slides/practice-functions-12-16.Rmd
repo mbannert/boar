@@ -1,0 +1,45 @@
+---
+title: "Working with data and functions"
+output: html_notebook
+---
+
+# Exploring the MLB data
+
+```{r}
+load("../../data/mlb.RData")
+ls()
+head(mlb)
+```
+
+## Questions: 
+
+  - How many observations are in the dataset?
+  - Who is the tallest / smallest player?
+  - Are players older than 32 significantly heavier than younger players?
+  
+## lapply / anonymous function: Who is the average size by position?
+
+1. split the dataset by position to obtain a list
+2. run `mean` on the list
+
+```{r}
+by_pos <- split(mlb,factor(mlb$Position))
+sizes <- sapply(by_pos,function(x) mean(x$height))
+sizes
+```
+
+## A custom function: What's the size of these players in centimeters?
+
+```{r}
+inchToCm <- function(size_in_inch,meters = T,digits=2){
+  out <- size_in_inch * 2.54
+  if(meters) out <- round(out/100,digits=2)
+  out
+}
+inchToCm(sizes)
+```
+
+
+
+
+
