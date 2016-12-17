@@ -17,6 +17,18 @@ head(mlb)
   - Who is the tallest / smallest player?
   - Are players older than 32 significantly heavier than younger players?
   
+  
+```{r}
+# no of observations
+nrow(mlb)
+mlb[which.max(mlb$height),"Name"]
+mlb$old <- mlb$Age > 32
+old_players <- mlb[mlb$old,]
+young_players <- mlb[!mlb$old,]
+t.test(old_players$weight,young_players$weight)
+t.test(weight ~ old,data = mlb)
+```
+
 ## lapply / anonymous function: Who is the average size by position?
 
 1. split the dataset by position to obtain a list
@@ -24,6 +36,8 @@ head(mlb)
 
 ```{r}
 by_pos <- split(mlb,factor(mlb$Position))
+lapply(by_pos,nrow)
+# by_pos$Catcher
 sizes <- sapply(by_pos,function(x) mean(x$height))
 sizes
 ```

@@ -78,7 +78,6 @@ shinyServer(function(input, output) {
 })
 ```
 
-
 ## Deployment
 
 - local
@@ -88,4 +87,39 @@ shinyServer(function(input, output) {
 ## Are you ready for to build a real app?
 
 [Take the official quiz by rstudio.com!](https://shiny.rstudio.com/tutorial/quiz/)
+
+## Planning the app
+
+**This course: dashboard structure**
+
+- sidebar
+- topbar
+- main panel
+- menu buttons / sub pages
+
+## The shinydashboard package
+
+<img src="blank_dashboard.png">
+```{r,eval=FALSE,echo=TRUE}
+library(shinydashboard)
+dashboardPage(
+  dashboardHeader(),
+  dashboardSidebar(),
+  dashboardBody()
+)
+```
+
+## An shiny based personality test
+
+- Find items, e.g., [sapa project](https://sapa-project.org/)
+- organize items, demographics, analytics
+- Which tools, widgets are needed? 
+
+
+
+
+
+
+
+
 
