@@ -44,12 +44,22 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Analyzing the hello-world app: ui.R
 ```{r,eval=FALSE,echo=TRUE}
 library(shiny)
-# Define server logic required to draw a histogram
-shinyServer(function(input, output) {
-    output$randomPlot <- renderPlot({
-    # some plotting
-  })
-})
+shinyUI(fluidPage(
+  titlePanel("A random normal"),
+  # Sidebar with a slider input for number of bins 
+  sidebarLayout(
+    sidebarPanel(
+       sliderInput("obs",
+                   "Number of obs:",
+                   min = 1,
+                   max = 1000,
+                   value = 100)
+    ),
+    mainPanel(
+       plotOutput("randomPlot")
+    )
+  )
+))
 ```
 
 ## A minimal note on HTML

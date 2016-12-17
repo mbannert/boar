@@ -9,6 +9,14 @@ output: html_notebook
 load("../../data/mlb.RData")
 ls()
 head(mlb)
+mlb$inch2cm <- mlb$height * 2.54
+
+inchToCm <- function(x,d = 2){
+  cm <- (x * 2.54) / 100
+  round(cm,digits = d)
+}
+ls()
+
 ```
 
 ## Questions: 
@@ -36,7 +44,8 @@ t.test(weight ~ old,data = mlb)
 
 ```{r}
 by_pos <- split(mlb,factor(mlb$Position))
-lapply(by_pos,nrow)
+sapply(by_pos,nrow)
+
 # by_pos$Catcher
 sizes <- sapply(by_pos,function(x) mean(x$height))
 sizes

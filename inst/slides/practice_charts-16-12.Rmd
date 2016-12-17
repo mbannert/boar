@@ -60,7 +60,6 @@ p
 <!-- https://rstudio.github.io/dygraphs/gallery-custom-plotters.html -->
 
 ```{r}
-library(jsonlite)
 baro_ch <- read.csv2("https://datenservice.kof.ethz.ch/api/ts?keys=kofbarometer&mime=csv",
                      header=T,sep=",",
                      stringsAsFactors = F,
@@ -71,6 +70,7 @@ str(baro_ch)
 baro_ts <- ts(baro_ch$kofbarometer,
               start(1991,1),
               frequency = 12)
+library(dygraphs)
 dygraph(baro_ts, main = "KOF Barometer") %>% 
   dyRangeSelector()
 ```
