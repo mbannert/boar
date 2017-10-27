@@ -100,6 +100,13 @@ tabOverview <- tabItem(tabName = "overview",
 )
 ```
 
+## References
+
+[Shiny dashboard structure manual](https://rstudio.github.io/shinydashboard/structure.html)
+
+
+
+
 
 
 

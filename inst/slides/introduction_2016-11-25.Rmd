@@ -1,8 +1,8 @@
 ---
-title: "Build useful Online Apps with R"
+title: "Build Online Apps with R"
 subtitle: "Introductory Session"
 author: "Matthias Bannert"
-date: "25 Nov 2016"
+date: "27 Oct 2017"
 output: ioslides_presentation
 widescreen: true
 runtime: shiny
@@ -24,6 +24,15 @@ knitr::opts_chunk$set(echo = FALSE)
 <div align="right">
 <img src="mba_profile.png" alt="matthias bannert" style="width: 180px;"/></div>
 
+## What about you? 
+
+- your studies / semester
+- research interests
+- expectations
+
+## ?
+
+
 ## Background Poll
 
 ```{r,echo=FALSE}
@@ -32,10 +41,10 @@ library(shiny)
 source("../../R/bullet.R")
 
 fluidPage(sidebarLayout(sidebarPanel(
-  numericInput("members", "Number of participants", 15),
-  numericInput("rstats", "R Statistical langauge", 15),  
-  numericInput("html", "HTML/CSS/JS devs", 15),
-  numericInput("shiny", "shiny framework", 15)
+  numericInput("members", "Number of participants", 14),
+  numericInput("rstats", "R Statistical langauge", 14),  
+  numericInput("html", "HTML/CSS/JS devs", 14),
+  numericInput("shiny", "shiny framework", 14)
   ),
   mainPanel(
     renderPlot({
@@ -78,11 +87,34 @@ fluidPage(sidebarLayout(sidebarPanel(
 - framework
 - widgets
 
+**Outline**
+
+- Intro (get everybody to the start line) / discuss ideas
+- 1st block: Fri: Programming, Sat: Visualization / Shiny
+- 2nd block: Fri: Repeat / mo' programming Sat: work on project  
+
 [>> course material](https://github.com/mbannert/boar) 
+
+## Modern Statistics aka Data Science
+
+- Statistics
+- Programming
+- Visualization
+- (Integration / Scaling)
+
+## Evaluation in this course
+
+- based on shiny app (group work, submit @end of semester)
+- collobaration in the course
+- based on your ability to form a group, organize, collaborate and finish a small, meaningful software project
+
+=> despite group work, individual grading!
+submission deadline: ?
+
 
 ## Inspiration
 
-<img src="five_percent.png" alt="matthias bannert" style="width: 500px;"/>
+<img src="five_percent.png" alt="five percent" style="width: 500px;"/>
 
 ## Inspiration
 
@@ -98,6 +130,8 @@ fluidPage(sidebarLayout(sidebarPanel(
 - [Survival Rate of an h2 pawn](http://jkunst.com/r/visualizing-chess-data-with-ggplot/)
 - [Seasonal Adjustment](http://www.seasonal.website/)
 - dropR
+- wgSuchR
+- partial correlation teaching app
 
 ## Before you start... 
 
@@ -105,7 +139,7 @@ fluidPage(sidebarLayout(sidebarPanel(
 
 - R 3.3.1+
 - R Studio 1.0+
-- R packages: shiny, shinydashboard, knitr
+- R packages: shiny, shinydashboard, knitr,
 - git (optional)
 
 ## Guess what...
@@ -275,6 +309,8 @@ server <- function(input, output) {
 - [Shiny Tutorial](http://shiny.rstudio.com/tutorial/)
 - [ShowMeShiny](http://www.showmeshiny.com/)
 - [Shiny Google Group](https://groups.google.com/forum/#!forum/shiny-discuss)
+- [Semantic UI (advanced)](https://github.com/Appsilon/shiny.semantic)
+- [Shiny Dashboards](https://rstudio.github.io/shinydashboard/)
 
 ## Ideas for Apps ?
 
