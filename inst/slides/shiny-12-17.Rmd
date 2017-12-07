@@ -2,7 +2,7 @@
 title: "Build useful Online Apps with R"
 subtitle: "The Shiny Web Application Framework"
 author: "Matthias Bannert"
-date: "17 Dec 2016"
+date: "8 Dec 2017"
 output: ioslides_presentation
 widescreen: true
 ---
@@ -94,10 +94,6 @@ shinyServer(function(input, output) {
 - shiny server
 - [SaaS](https://shinyapps.io)
 
-## Are you ready for to build a real app?
-
-[Take the official quiz by rstudio.com!](https://shiny.rstudio.com/tutorial/quiz/)
-
 ## Planning the app
 
 **This course: dashboard structure**
@@ -125,8 +121,11 @@ dashboardPage(
 - organize items, demographics, analytics
 - Which tools, widgets are needed? 
 
+## Are you ready for to build a real app?
 
+[Take the official quiz by rstudio.com!](https://shiny.rstudio.com/tutorial/quiz/)
 
+[back to session 2](session_2_2017.html)
 
 
 

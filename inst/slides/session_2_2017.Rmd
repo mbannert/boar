@@ -1,0 +1,76 @@
+---
+title: "Build useful Online Apps with R"
+author: "Matthias Bannert"
+date: "8 Dec 2017"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Outline
+
+- repeat what you must not forget (classics)
+- introduction to shiny
+- simple tasks in R (with built-in data)
+- writing an own function
+- R and data
+- more custom functions
+- discuss app ideas (blue prints)
+- visualization
+
+# Warmup 
+
+## Basic R objects
+
+- vector
+- matrix
+- data.frame
+- list
+
+## Repetitio est ... 
+
+- What does '<-' mean?
+- What's the difference between (),[] and {}?
+
+## Getting to know your workplace (R Studio IDE)
+
+- 4 panes
+- console 
+- script tabs (cmd+enter / ctrl+enter)
+- projects (.Rproj)
+- autocomplete (tab)
+
+## Suggested folder structure for course projects
+
+- data/ 
+- R/ (functions)
+- tests/ (function calls)
+- inst/app (shiny)
+
+# Introduction to shiny
+
+## Shiny Web Application Framework
+
+[shiny](shiny-12-17.html)
+
+# Simple Tasks in R
+
+## Task I: Working on a built-in dataset
+
+1. How many observations does the dataset mtcars have?
+2. What's the miles-per-gallon average, median?
+3. Which car does consume the least fuel? 
+4. Which is the car the least fuel by cylinders?
+5. How is mpg distributed?
+6. Why does solving analytics exercises through programming make sense?
+
+
+
+
+
+
+
+
