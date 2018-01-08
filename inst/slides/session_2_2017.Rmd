@@ -79,7 +79,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Validate - Which functions do I need?
 
-```{r,eval=FALSE}
+```{r,eval=FALSE,echo=T}
 head()
 tail()
 str()
@@ -89,7 +89,7 @@ table()
 
 ## Summarize - Which functions do I need?
 
-```{r,eval=FALSE}
+```{r,eval=FALSE,echo=T}
 summary()
 table()
 mean()
@@ -102,7 +102,7 @@ quantile()
 
 ## Identify 'rocks' - Which functions do I need?
 
-```{r,eval=FALSE}
+```{r,eval=FALSE,echo=T}
 plot()
 pairs()
 hist()

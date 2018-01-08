@@ -30,7 +30,15 @@ knitr::opts_chunk$set(echo = FALSE)
 - research interests
 - expectations
 
-## ?
+## Students' Expectations of the Course
+
+- "Double up R"
+
+- Basics and Classics
+
+- Understand R Ecosystem
+
+
 
 
 ## Background Poll
@@ -109,7 +117,7 @@ fluidPage(sidebarLayout(sidebarPanel(
 - based on your ability to form a group, organize, collaborate and finish a small, meaningful software project
 
 => despite group work, individual grading!
-submission deadline: ?
+submission deadline: March 15
 
 
 ## Inspiration
@@ -253,8 +261,7 @@ lapply()
 
 - [stackoverflow user written documentation R](http://stackoverflow.com/documentation/r/topics)
 
-- [YaRRR! The Pirate's Guide to R](http://nathanieldphillips.com/thepiratesguidetor/)
-
+- [Datacamp Free Introduction to R (Login needed)](https://www.datacamp.com/courses/free-introduction-to-r)
 
 ## Getting started with shiny
 
@@ -309,8 +316,9 @@ server <- function(input, output) {
 - [Shiny Tutorial](http://shiny.rstudio.com/tutorial/)
 - [ShowMeShiny](http://www.showmeshiny.com/)
 - [Shiny Google Group](https://groups.google.com/forum/#!forum/shiny-discuss)
-- [Semantic UI (advanced)](https://github.com/Appsilon/shiny.semantic)
 - [Shiny Dashboards](https://rstudio.github.io/shinydashboard/)
+- [Semantic UI (advanced)](https://github.com/Appsilon/shiny.semantic)
+
 
 ## Ideas for Apps ?
 
