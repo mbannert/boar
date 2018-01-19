@@ -1,0 +1,118 @@
+---
+title: "Build useful Online Apps with R"
+author: "Matthias Bannert"
+date: "19 Jan 2018"
+output: ioslides_presentation
+widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Course Outline
+
+- warmup
+- repeat shiny
+- repeat R / functions
+- visualization in R
+- map out prototype, present sketch in class
+
+- work on prototype
+- present prototype
+
+## Warm up 
+
+[KOF Indicator Dashboard](http://kid.kof.ethz.ch)
+
+## Warmup: Repeat Shiny 
+
+- ui.R
+- server.R
+- render
+- output
+- widgets
+- shinydashboard
+- emptyapp
+
+
+## Warmup: Repeat functions
+
+- name
+- parameters
+- body
+
+*note: role of lists* 
+
+
+## Visualization in R
+
+- base plot
+- ggplot2 (show reverse dependencies)
+- time series -> dygraphs
+- tsplot
+
+
+## Students' Expectations of the Course
+
+- "Double up R"
+
+- Basics and Classics
+
+- Understand R Ecosystem
+
+
+## Student projects
+
+Plan the GUI, present ideas in class. Saturday evening present prototype.
+What are input and output parameters?
+
+## Student projects: Factor analysis
+
+- plot eigenvalues
+- re-run based on number of factors
+- upload dataset
+- make sure it's numeric
+- help
+- visualize loading (heat map)
+- bar charts
+
+
+## Student projects: Choropleth
+
+- what's the general challenge of creating a choropleth?
+- what's available yet? 
+- what's your own contribution?
+- How about data?
+- GUI for an existing package? 
+- what are possible input params? 
+
+## Student projects: Diffusion
+
+- what's your plan / contribution
+- what's the R part in this? 
+- How does a reasonable GUI look like? 
+- Prototyping strategy?
+
+## Student projects: Infographs
+
+- what's the general challenge of creating an informative figure?
+- what's available yet? 
+- what's your own contribution?
+- How about data?
+- GUI for an existing package? 
+- what are possible input params? 
+
+## Student projects: Health Data Visualization
+
+- what's the general challenge in health(care) stats?
+- what's available yet? 
+- what's your own contribution?
+- How about data?
+- GUI for an existing package? 
+- what are possible input params? 
+
+
+
+
+
